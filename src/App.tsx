@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import RandomRecipe from "./components/RandomRecipe";
 import CardsByCategory from "./components/CardsByCategory";
 import CardDetails from "./components/CardDetails";
+import Login from "./components/Login";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<RandomRecipe />} />
         <Route path="/recipes/:category" element={<CardsByCategory />} />
         <Route path="/recipe/:recipeName" element={<CardDetails />} />\
+        <Route path="/login" element={<Login />} />
         <Route path="/*" element={<p>404 not found</p>} />
       </Routes>
     </div>
