@@ -1,16 +1,16 @@
 import Header from "./components/Header";
-import Nav from "./components/Nav";
 import { Route, Routes } from "react-router-dom";
 import RandomRecipe from "./components/RandomRecipe";
 import CardsByCategory from "./components/CardsByCategory";
 import CardDetails from "./components/CardDetails";
 import Login from "./components/Login";
+import CategoriesNav from "./components/CategoriesNav";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Nav />
+      <CategoriesNav />
       <Routes>
         <Route path="/" element={<RandomRecipe />} />
         <Route path="/recipes/:category" element={<CardsByCategory />} />
