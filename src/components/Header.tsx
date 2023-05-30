@@ -12,7 +12,7 @@ function Header(props: HeaderProps) {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand style={{ fontWeight: "bold" }}>
+        <Navbar.Brand>
           <Link to="/" className="linkStyle">
             Tasty Cards
           </Link>
@@ -20,11 +20,9 @@ function Header(props: HeaderProps) {
         <Nav className="ms-auto">
           {/* <Nav.Link style={{ fontWeight: "bold" }}>Bookmarks</Nav.Link> feature to add*/}
 
-          <Nav.Link style={{ fontWeight: "bold" }}>
-            <Link to="/login" className="linkStyle">
-              Sign In <FontAwesomeIcon icon={faSignInAlt} />
-            </Link>
-          </Nav.Link>
+          <Link to="/login" className="linkStyle">
+            Sign In <FontAwesomeIcon icon={faSignInAlt} />
+          </Link>
         </Nav>
       </Container>
     </Navbar>
