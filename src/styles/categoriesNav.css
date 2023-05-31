@@ -1,0 +1,12 @@
+.linkStyleNav {
+  font-family: "Comic Sans MS", cursive;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+}
+.linkStyleNav:hover {
+  text-decoration: underline;
+  color: brown;
+}
