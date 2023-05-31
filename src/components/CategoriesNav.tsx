@@ -35,7 +35,7 @@ const CategoriesNav = () => {
         {categoryList?.map((category) => (
           <Col data-testid="categoryList" key={category.id}>
             <Link
-              className="linkStyleNav"
+              className="linkStyleNav__css"
               to={`/recipes/${category.category_name}`}
             >
               {category.category_name}

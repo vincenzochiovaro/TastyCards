@@ -13,14 +13,14 @@ function Header(props: HeaderProps) {
     <Navbar bg="white" variant="white" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand>
-          <Link to="/" className="linkStyleHeader">
+          <Link to="/" className="linkStyleHeader__css">
             Tasty Cards
           </Link>
         </Navbar.Brand>
         <Nav className="ms-auto">
           {/* <Nav.Link style={{ fontWeight: "bold" }}>Bookmarks</Nav.Link> feature to add*/}
 
-          <Link to="/login" className="linkStyleHeader">
+          <Link to="/login" className="linkStyleHeader__css">
             Sign In <FontAwesomeIcon icon={faSignInAlt} />
           </Link>
         </Nav>

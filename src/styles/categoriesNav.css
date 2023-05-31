@@ -1,4 +1,4 @@
-.linkStyleNav {
+.linkStyleNav__css {
   font-family: "Comic Sans MS", cursive;
   display: flex;
   justify-content: center;
@@ -6,7 +6,7 @@
   text-decoration: none;
   color: black;
 }
-.linkStyleNav:hover {
+.linkStyleNav__css:hover {
   text-decoration: underline;
   color: brown;
 }
