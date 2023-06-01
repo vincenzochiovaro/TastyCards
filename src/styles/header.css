@@ -1,8 +1,35 @@
-.linkStyleHeader__css {
-  text-decoration: none;
-  color: rgb(246, 168, 24);
-  font-weight: bold;
+.header__container {
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.linkStyleHeader__css:hover {
-  color: brown;
+
+.header__link {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  color: #ff5722;
+}
+
+.header__signIn {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header__signIn:hover {
+  animation-name: rubberBand;
+  animation-duration: 1s;
+  color: #ff5722;
+}
+
+.header__animation {
+  animation-name: bounceIn;
+  animation-duration: 4s;
 }
