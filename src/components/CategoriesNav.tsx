@@ -33,6 +33,7 @@ const CategoriesNav = () => {
           key={category.id}
           to={`/recipes/${category.category_name}`}
           className="category-link animate__animated animate__fadeInUp"
+          data-testid="categoryList"
         >
           {category.category_name}
         </Link>
