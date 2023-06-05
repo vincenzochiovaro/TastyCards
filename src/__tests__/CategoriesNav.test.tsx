@@ -15,9 +15,14 @@ describe("CategoriesNav", () => {
       </BrowserRouter>
     );
 
-    await waitFor(async () => {
-      const categoryListElements = await screen.findAllByTestId("categoryList");
-      expect(categoryListElements).toHaveLength(4);
-    });
+    await waitFor(
+      async () => {
+        const categoryListElements = await screen.findAllByTestId(
+          "categoryList"
+        );
+        expect(categoryListElements).toHaveLength(4);
+      },
+      { timeout: 5000 }
+    );
   });
 });

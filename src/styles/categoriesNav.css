@@ -1,12 +1,36 @@
-.linkStyleNav {
-  font-family: "Comic Sans MS", cursive;
+.categories-nav {
   display: flex;
   justify-content: center;
-  font-size: 13px;
-  text-decoration: none;
-  color: black;
 }
-.linkStyleNav:hover {
-  text-decoration: underline;
-  color: brown;
+
+.category-link {
+  margin: 0 10px;
+  padding: 10px;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.category-link:hover {
+  background-color: #f8f8f8;
+}
+
+.animate__animated {
+  animation-duration: 1.5s;
+}
+
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

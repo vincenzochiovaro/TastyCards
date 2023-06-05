@@ -1,6 +1,3 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import { useEffect, useState } from "react";
 import { fetchCategories } from "../apiCalls";
 import { Link } from "react-router-dom";
@@ -30,20 +27,18 @@ const CategoriesNav = () => {
   }, []);
 
   return (
-    <Container>
-      <Row className="d-flex">
-        {categoryList?.map((category) => (
-          <Col data-testid="categoryList" key={category.id}>
-            <Link
-              className="linkStyleNav"
-              to={`/recipes/${category.category_name}`}
-            >
-              {category.category_name}
-            </Link>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+    <div className="categories-nav">
+      {categoryList?.map((category) => (
+        <Link
+          key={category.id}
+          to={`/recipes/${category.category_name}`}
+          className="category-link animate__animated animate__fadeInUp"
+          data-testid="categoryList"
+        >
+          {category.category_name}
+        </Link>
+      ))}
+    </div>
   );
 };
 

@@ -1,0 +1,41 @@
+.randomRecipe__Container {
+  margin-top: 20px;
+}
+
+.randomRecipe__Card {
+  width: 32rem;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.randomRecipe__Card .card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.randomRecipe__Card .card-text {
+  margin-bottom: 10px;
+}
+
+.randomRecipe__Button {
+  background-color: #fca311;
+  border-color: #fca311;
+  color: #ffffff;
+  font-weight: bold;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.randomRecipe__Button:hover {
+  background-color: #e15900;
+  border-color: #e15900;
+  color: #ffffff;
+}
+
+.randomRecipe__Button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(252, 163, 17, 0.5);
+}
+
+.randomRecipe__LoadingSpinner {
+  width: 250px;
+}

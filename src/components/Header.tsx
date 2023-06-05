@@ -5,22 +5,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSignInAlt } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import "../styles/header.css";
+import "animate.css/animate.min.css";
 
 type HeaderProps = {};
 
 function Header(props: HeaderProps) {
   return (
-    <Navbar bg="white" variant="white" expand="lg" sticky="top">
+    <Navbar
+      bg="white"
+      variant="light"
+      expand="lg"
+      sticky="top"
+      className="header__container"
+    >
       <Container>
-        <Navbar.Brand>
-          <Link to="/" className="linkStyleHeader">
+        <Navbar.Brand className="header__animation">
+          <Link to="/" className="header__link ">
             Tasty Cards
           </Link>
         </Navbar.Brand>
         <Nav className="ms-auto">
-          {/* <Nav.Link style={{ fontWeight: "bold" }}>Bookmarks</Nav.Link> feature to add*/}
-
-          <Link to="/login" className="linkStyleHeader">
+          <Link to="/login" className="header__link header__signIn">
             Sign In <FontAwesomeIcon icon={faSignInAlt} />
           </Link>
         </Nav>
