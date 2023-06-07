@@ -29,7 +29,7 @@ const RandomRecipe = () => {
 
         setTimeout(() => {
           setIsLoading(false);
-        }, 4000);
+        }, 2000);
       } catch (error) {
         console.log(error);
         setRecipe(null);
@@ -104,7 +104,9 @@ const RandomRecipe = () => {
               </Button>
             </Col>
             <Col>
-              <RandomRecipeDetail />
+              <RandomRecipeDetail
+                recipeTitle={recipe?.map((recipe) => recipe.title) ?? []}
+              />
             </Col>
           </Row>
         </Card.Body>
