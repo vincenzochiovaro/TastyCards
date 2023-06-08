@@ -1,0 +1,66 @@
+.random-recipe-modal .modal-content {
+  border-radius: 0;
+}
+
+.random-recipe-modal .modal-header {
+  background-color: #f8f9fa;
+  border-bottom: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.random-recipe-modal .modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.random-recipe-modal .modal-body {
+  padding: 20px;
+}
+
+.random-recipe-modal h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.random-recipe-modal ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.random-recipe-modal li {
+  margin-bottom: 5px;
+}
+
+.random-recipe-modal .modal-footer {
+  border-top: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.random-recipe-modal .btn-secondary {
+  background-color: #e9ecef;
+  border-color: #e9ecef;
+  color: #212529;
+}
+
+.random-recipe-modal .btn-secondary:hover {
+  background-color: #dee2e6;
+  border-color: #dee2e6;
+  color: #212529;
+}
+
+.view-recipe-button {
+  background-color: #fca311;
+  border-color: #fca311;
+  color: #ffffff;
+  font-weight: bold;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.view-recipe-button:hover {
+  background-color: #263e73;
+}
