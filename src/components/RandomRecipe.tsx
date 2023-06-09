@@ -8,6 +8,7 @@ import RandomRecipeDetail from "./RandomRecipeDetail";
 import "../styles/randomRecipe.css";
 import "animate.css/animate.min.css";
 import spinnerImage from "../images/spinnerImage.gif";
+import PopupWindow from "./PopupWindow";
 
 type RandomRecipeType = {
   id: number;
@@ -19,6 +20,7 @@ const RandomRecipe = () => {
   const [recipe, setRecipe] = useState<RandomRecipeType[] | null>(null);
   const [count, setCount] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
+  const [showPopup, setShowPopup] = useState(true);
 
   useEffect(() => {
     const randomRecipeData = async () => {
@@ -38,6 +40,14 @@ const RandomRecipe = () => {
     };
     randomRecipeData();
   }, [count]);
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
+  if (showPopup) {
+    return <PopupWindow onClose={handleClosePopup} />;
+  }
 
   if (count === 0) {
     return (
@@ -66,7 +76,6 @@ const RandomRecipe = () => {
     return (
       <Container className="d-flex align-items-center justify-content-center randomRecipe__Container">
         <Card className="randomRecipe__Card animate__animated animate__fadeInDown">
-          Loading . . .
           <Card.Body>
             <img
               src={spinnerImage}
