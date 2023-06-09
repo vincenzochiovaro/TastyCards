@@ -3,6 +3,10 @@
   justify-content: center;
 }
 
+.render-warning {
+  color: red;
+}
+
 .category-link {
   margin: 0 10px;
   padding: 10px;
