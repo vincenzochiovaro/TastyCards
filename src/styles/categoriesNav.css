@@ -1,40 +1,68 @@
 .categories-nav {
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 1;
+  background-color: white;
 }
 
-.render-warning {
-  color: red;
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .category-link {
-  margin: 0 10px;
-  padding: 10px;
+  display: inline-block;
   color: #333;
   font-weight: bold;
   text-decoration: none;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #fff;
   transition: background-color 0.3s ease;
 }
 
 .category-link:hover {
-  background-color: #f8f8f8;
+  background-color: #e0e0e0;
 }
 
-.animate__animated {
-  animation-duration: 1.5s;
+.nav-toggle {
+  border-color: #333;
+}
+.toggle-icon {
+  font-size: 24px;
+  color: #333;
+  margin-right: 5px;
 }
 
-.animate__fadeInUp {
-  animation-name: fadeInUp;
+.toggle-label {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+  display: inline-block;
+  cursor: pointer;
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+.navbar-collapse {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 2;
+
+  .navbar-toggler {
+    z-index: 3;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+}
+
+@media (min-width: 992px) {
+  .categories-nav {
+    margin-bottom: 80px;
   }
 }

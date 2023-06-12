@@ -58,6 +58,9 @@
   margin-bottom: 20px;
   animation: scaleIn 0.5s ease-in-out;
 }
+.render-warning {
+  color: red;
+}
 
 @keyframes scaleIn {
   0% {
