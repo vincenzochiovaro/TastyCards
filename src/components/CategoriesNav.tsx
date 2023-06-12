@@ -1,44 +1,71 @@
-import { useEffect, useState } from "react";
-import { fetchCategories } from "../apiCalls";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Navbar, Nav } from "react-bootstrap";
+import { FaBars } from "react-icons/fa";
 import "../styles/categoriesNav.css";
 
-type categoryListData = {
-  id: number;
-  category_name: string;
-};
-
 const CategoriesNav = () => {
-  const [categoryList, setCategoryList] = useState<categoryListData[] | null>(
-    null
-  );
+  const [expanded, setExpanded] = useState(false);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const categories = await fetchCategories();
-        setCategoryList(categories);
-      } catch (error) {
-        console.log("Error fetching categories:", error);
-        setCategoryList(null);
-      }
-    };
-    fetchData();
-  }, []);
+  const handleNavClose = () => {
+    setExpanded(false);
+  };
 
   return (
-    <div className="categories-nav">
-      {categoryList?.map((category) => (
-        <Link
-          key={category.id}
-          to={`/recipes/${category.category_name}`}
-          className="category-link animate__animated animate__fadeInUp"
-          data-testid="categoryList"
-        >
-          {category.category_name}
-        </Link>
-      ))}
-    </div>
+    <Navbar expand="lg" className="categories-nav">
+      <Navbar.Toggle
+        className="nav-toggle"
+        aria-controls="basic-navbar-nav"
+        onClick={() => setExpanded(!expanded)}
+      >
+        <FaBars className="toggle-icon" />
+        <span className="toggle-label"> Categories</span>
+      </Navbar.Toggle>
+      <Navbar.Collapse id="basic-navbar-nav" in={expanded}>
+        <Nav className="nav-links">
+          <Link
+            to="/recipes/Pork"
+            data-testid="categoryList"
+            className="category-link animated fadeInUp"
+            onClick={handleNavClose}
+          >
+            Pork
+          </Link>
+          <Link
+            to="/recipes/Lamb"
+            data-testid="categoryList"
+            className="category-link animated fadeInUp"
+            onClick={handleNavClose}
+          >
+            Lamb
+          </Link>
+          <Link
+            to="/recipes/Chicken"
+            data-testid="categoryList"
+            className="category-link animated fadeInUp"
+            onClick={handleNavClose}
+          >
+            Chicken
+          </Link>
+          <Link
+            to="/recipes/Beef"
+            data-testid="categoryList"
+            className="category-link animated fadeInUp"
+            onClick={handleNavClose}
+          >
+            Beef
+          </Link>
+          <Link
+            to="/recipes/ComingSoon"
+            data-testid="categoryList"
+            className="category-link animated fadeInUp"
+            onClick={handleNavClose}
+          >
+            Vegetarian
+          </Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 
