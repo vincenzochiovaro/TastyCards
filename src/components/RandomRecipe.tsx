@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 import randomImage from "../images/random.png";
 import { Col, Container, Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
-import { fetchRandomRecipe } from "../apiCalls";
+import { fetchRandomRecipe } from "../apiCalls/fetchRandomRecipe";
 import RandomRecipeDetail from "./RandomRecipeDetail";
 import "../styles/randomRecipe.css";
 import "animate.css/animate.min.css";
