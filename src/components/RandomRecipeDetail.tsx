@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Modal, Button, ListGroup } from "react-bootstrap";
-import { fetchRecipeDetails } from "../apiCalls";
+import { fetchRecipeDetails } from "../apiCalls/fetchRecipeDetails";
 import "../styles/randomRecipeDetail.css";
 
 type RandomRecipeDetailProps = {
