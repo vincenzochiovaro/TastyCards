@@ -61,6 +61,13 @@
   }
 }
 
+.disabled {
+  cursor: not-allowed;
+}
+.disabled:hover {
+  color: red;
+}
+
 @media (min-width: 992px) {
   .categories-nav {
     margin-bottom: 80px;
