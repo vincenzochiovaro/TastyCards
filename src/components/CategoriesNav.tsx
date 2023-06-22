@@ -1,14 +1,18 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Nav } from "react-bootstrap";
+import { Navbar, Nav, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { FaBars } from "react-icons/fa";
 import "../styles/categoriesNav.css";
 
 const CategoriesNav = () => {
   const [expanded, setExpanded] = useState(false);
+  const isLinkDisabled = true;
 
   const handleNavClose = () => {
     setExpanded(false);
+  };
+  const renderTooltip = () => {
+    return <Tooltip>Coming Soon</Tooltip>;
   };
 
   return (
@@ -55,14 +59,26 @@ const CategoriesNav = () => {
           >
             Beef
           </Link>
-          <Link
-            to="/recipes/ComingSoon"
-            data-testid="categoryList"
-            className="category-link animated fadeInUp"
-            onClick={handleNavClose}
-          >
-            Vegetarian
-          </Link>
+
+          {isLinkDisabled ? (
+            <OverlayTrigger placement="bottom" overlay={renderTooltip()}>
+              <span
+                data-testid="categoryList"
+                className="category-link animated fadeInUp disabled"
+              >
+                Vegetarian
+              </span>
+            </OverlayTrigger>
+          ) : (
+            <Link
+              to={"/recipes/Vegetarian"}
+              data-testid="categoryList"
+              className="category-link animated fadeInUp disabled"
+              onClick={handleNavClose}
+            >
+              Vegetarian
+            </Link>
+          )}
         </Nav>
       </Navbar.Collapse>
     </Navbar>
