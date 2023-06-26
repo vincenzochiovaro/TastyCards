@@ -25,10 +25,7 @@ const RandomRecipe = () => {
       try {
         const response = await fetchRandomRecipe();
         setRecipe(response);
-
-        setTimeout(() => {
-          setIsLoading(false);
-        }, 2000);
+        setIsLoading(false);
       } catch (error) {
         console.log(error);
         setRecipe(null);
