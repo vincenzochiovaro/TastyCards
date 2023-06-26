@@ -13,12 +13,17 @@ type Recipe = {
 
 export const fetchCardsByCategory = async (
   category: string
-): Promise<Recipe[]> => {
-  const response = await fetch(
-    `https://mealtime-dkgl.onrender.com/api/recipes/${category}`
-  );
+): Promise<Recipe[] | null> => {
+  try {
+    const response = await fetch(
+      `https://mealtime-dkgl.onrender.com/api/recipes/${category}`
+    );
 
-  const recipesByCategory: Recipe[] = await response.json();
+    const recipesByCategory: Recipe[] = await response.json();
 
-  return recipesByCategory;
+    return recipesByCategory;
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
 };
