@@ -14,7 +14,11 @@ function App() {
       <Routes>
         <Route path="/" element={<RandomRecipe />} />
         <Route path="/recipes/:category" element={<CardsByCategory />} />
-        <Route path="/recipe/:recipeName" element={<CardDetails />} />\
+        <Route
+          path="/recipes/:category/recipe/:recipeName"
+          element={<CardDetails />}
+        />
+        \
         <Route path="/login" element={<Login />} />
         <Route path="/*" element={<p>404 not found</p>} />
       </Routes>
