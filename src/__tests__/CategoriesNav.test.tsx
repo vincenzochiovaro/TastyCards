@@ -20,7 +20,7 @@ describe("CategoriesNav", () => {
         const categoryListElements = await screen.findAllByTestId(
           "categoryList"
         );
-        expect(categoryListElements).toHaveLength(4);
+        expect(categoryListElements).toHaveLength(5);
       },
       { timeout: 5000 }
     );
