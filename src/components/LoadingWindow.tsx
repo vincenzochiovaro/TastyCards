@@ -10,9 +10,10 @@ const LoadingWindow = () => {
         <p className="loading-text">
           Introducing <strong>Tasty Cards</strong>, the ultimate solution for
           those indecisive moments when choosing a recipe becomes a challenge.
-          Show your support by liking and commenting on your favorite recipes,
-          helping us improve and offer even better recommendations in the
-          future.
+          There are a lot of websites providing great instructions for making
+          meals but if you are looking to quickly explore dishes completely at
+          random my recipe generator should be just what you have been looking
+          for.
         </p>
 
         <p className="loading-text render-warning">
