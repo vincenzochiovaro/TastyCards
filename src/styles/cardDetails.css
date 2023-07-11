@@ -1,0 +1,32 @@
+.cardDetails__figureContainer {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.cardDetails__figureImg {
+  width: 500px;
+  height: 250px;
+  transition: transform 0.3s;
+  margin: 10px;
+}
+
+.cardDetails__figureImg:hover {
+  transform: scale(1.1);
+}
+
+.cardDetails__recipeTitle {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .cardDetails__figureImg {
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+  }
+  .cardDetails__figureImg:hover {
+    transform: scale(1);
+  }
+}
