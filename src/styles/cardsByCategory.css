@@ -3,6 +3,14 @@
   margin: 0 auto;
   padding: 10px;
 }
+.card {
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
 
 .cardsByCat__row {
   display: flex;
@@ -52,9 +60,10 @@
   background-color: #323437;
 }
 .cardsByCat__upArrow {
-  display: flex;
-  justify-content: right;
   color: black;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   font-size: 30px;
   margin-bottom: 20px;
 }

@@ -11,8 +11,6 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.34",
-    "@types/react": "^18.2.7",
-    "@types/react-dom": "^18.2.4",
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.3",
     "mdb-react-ui-kit": "^6.1.0",
@@ -52,6 +50,8 @@
     "@babel/preset-env": "^7.22.4",
     "@babel/preset-react": "^7.22.3",
     "@testing-library/react": "^13.4.0",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.7",
     "babel-jest": "^29.5.0",
     "react-router-dom": "^6.11.2"
   }
