@@ -6,10 +6,14 @@ import { faSignInAlt } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import "../styles/header.css";
 import "animate.css/animate.min.css";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 type HeaderProps = {};
 
 function Header(props: HeaderProps) {
+  const renderTooltip = () => {
+    return <Tooltip>Coming Soon</Tooltip>;
+  };
   return (
     <Navbar
       bg="white"
@@ -24,10 +28,16 @@ function Header(props: HeaderProps) {
             Tasty Cards
           </Link>
         </Navbar.Brand>
+
         <Nav className="ms-auto">
-          <Link to="/login" className="header__link header__signIn">
-            Sign In <FontAwesomeIcon icon={faSignInAlt} />
-          </Link>
+          <OverlayTrigger placement="bottom" overlay={renderTooltip()}>
+            {/* <Link to="/login" */}
+            <span className="header__link header__signIn">
+              Sign In <FontAwesomeIcon icon={faSignInAlt} />
+            </span>
+
+            {/* </Link> */}
+          </OverlayTrigger>
         </Nav>
       </Container>
     </Navbar>
