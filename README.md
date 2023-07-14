@@ -1,6 +1,12 @@
-# TastyCards
+# TastyCards 1.0
 
-TastyCards is a minimalistic recipe generator platform that allows users to explore and discover random recipes. It serves as the Minimum Viable Product (MVP) of the TastyCards project, providing core functionality and a basic user experience.
+TastyCards1.0 is a minimalistic recipe generator platform that allows users to explore and discover random recipes. It serves as the Minimum Viable Product (MVP) of the TastyCards project, providing core functionality and a basic user experience.
+
+## Hosted Version
+
+TastyCards is hosted on an AWS S3 bucket, providing easy access to the platform.
+
+- Hosted on AWS S3: http://tastycards-bucket.s3-website.eu-west-2.amazonaws.com
 
 ## Features
 
