@@ -6,7 +6,7 @@ TastyCards1.0 is a minimalistic recipe generator platform that allows users to e
 
 TastyCards is hosted on an AWS S3 bucket, providing easy access to the platform.
 
-- Hosted on AWS S3: http://tastycards-bucket.s3-website.eu-west-2.amazonaws.com
+- Hosted on AWS S3: https://d17bcgiggm8x98.cloudfront.net.
 
 ## Features
 
