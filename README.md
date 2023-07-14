@@ -1,6 +1,6 @@
 # TastyCards
 
-TastyCards (MVP) is a minimalistic recipe generator platform that allows users to explore and discover random recipes. It serves as the Minimum Viable Product (MVP) of the TastyCards project, providing core functionality and a basic user experience.
+TastyCards is a minimalistic recipe generator platform that allows users to explore and discover random recipes. It serves as the Minimum Viable Product (MVP) of the TastyCards project, providing core functionality and a basic user experience.
 
 ## Features
 
