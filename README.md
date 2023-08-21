@@ -1,6 +1,6 @@
 # TastyCards 1.0
 
-TastyCards1.0 is a minimalistic recipe generator platform that allows users to explore and discover random recipes. It serves as the Minimum Viable Product (MVP) of the TastyCards project, providing core functionality and a basic user experience.
+TastyCards 1.0 is a minimalist recipe generator platform that provides users the opportunity to explore and uncover random recipes. This project also serves as an extensive testing platform, thoughtfully crafted to bring to life and verify the functionalities of my Mealtime backend project. TastyCards 1.0 stands as a live testament to the hands-on application of the fundamental features integrated into Mealtime. https://github.com/vincenzochiovaro/Mealtime
 
 ## Hosted Version
 
@@ -26,7 +26,7 @@ TastyCards is hosted on an AWS S3 bucket, providing easy access to the platform.
 
 ## Getting Started
 
-To get started with TastyCards (MVP), follow these steps:
+To get started with TastyCards, follow these steps:
 
 1. Clone the repository
 2. Navigate to the project directory
@@ -35,7 +35,7 @@ To get started with TastyCards (MVP), follow these steps:
 
 ## Testing
 
-TastyCards (MVP) includes a basic set of unit tests to ensure core functionality. These tests cover essential components, functions, and user interactions. The following testing frameworks and libraries are used for testing:
+TastyCards includes a basic set of unit tests to ensure core functionality. These tests cover essential components, functions, and user interactions. The following testing frameworks and libraries are used for testing:
 
 - Jest: JavaScript testing framework
 - React Testing Library: Testing utilities for testing React components
@@ -48,7 +48,7 @@ To run the tests, follow these steps:
 
 ## Folder Structure
 
-The project structure (MVP) is organized as follows:
+The project structure is organized as follows:
 
 - `public`: Contains the public assets and the HTML template file
 - `__tests__`: Contains the basic test files for unit testing the application
